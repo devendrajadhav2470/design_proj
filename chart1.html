@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel = "stylesheet" type="text/css" href = "styles.css">
+    <meta charset="utf-8">
+    <title>Dynamic Chart.js Line Chart Example</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+  </head>
+  <body>
+
+    <!-- html for the clock -->
+      <div id="clock">
+      <span id="hours"></span>
+      <span id="minutes"></span>
+      <span id="seconds"></span>
+    </div>
+    <!--  -->
+
+
+     </div>
+      <style>
+        #topleft{
+            float:left;
+            width:50%;
+            height:450px;
+            align-items: left;
+        }
+        #topright{
+            float:right;
+            width:50%;
+            height:450px;
+            align-items: left;
+        }
+        #bottomleft{
+            /*min-width: 400px;
+            min-height: 300px;*/
+            float:left;
+            width:50%;
+            height:450px;
+             align-items: left; 
+        }
+        #bottomright{
+            min-width: 400px;
+            min-height: 300px;
+            float:left;
+            width:50%;
+            height:450px;
+            /* align-items: left; */
+        }
+    </style>
+
+
+    <div id="topleft" >
+      <canvas id="pie_chart1" width="800" height="400"></canvas> 
+      </div>
+      <div id="topright">
+        <canvas id="line_chart1" width="800" height="300"></canvas> 
+    </div>
+    <div id="bottomleft">
+      <canvas id="line_chart2" width="800" height="400"></canvas> 
+    </div>
+    <div id ="bottonright">
+      Space for ML forecasting 
+    </div>
+
+
+
+<script src = "line_chart1.js"> </script>
+<script src = "pie_chart1.js"> </script>
+<script src ="clock.js"></script>
+
+
+
+	
+ 
+  </body>
+</html>
